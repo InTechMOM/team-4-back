@@ -1,4 +1,5 @@
 import express from 'express';
+import { dbConnection } from './config/db.js';
 import { port } from './config/index.js';
 
 const app = express();
@@ -17,3 +18,4 @@ app.listen(port, (error) => {
   }
   console.log('server listening in port ' + port)
 })
+
